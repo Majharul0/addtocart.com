@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoes Shop</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cart.css">
+
+</head>
+<body>
+    <div class="container" id="home">
+    <!-- header section -->
+        <div class="header">
+            <h3 id="active__page">Products</h3>
+            <a  href="#cart" id="cartBtn" onclick="showCartPage()"><img src="assets/icon/cart.svg" alt=""><span id="cartItem">0</span></a>
+        </div>
+
+        
+    <!-- product section -->
+    <div class="all__products" id="place__products">
+        <!-- Each item start here -->
+        
+
+
+    </div>
+   
+    </div>
+
+    <div class="containerForCart" id="cart">
+        <!-- header section -->
+    
+            <div class="header">
+                <h3 id="active__page">Cart</h3>
+                <a  href="#home" id="cartBtn" onclick="showHomePage();"><img src="assets/icon/back-arrow.svg" alt=""></a>
+            </div>
+    
+        <div class="total__items">
+     
+            <div class="left__side" id="cartProducts">
+    
+                <div class="item">
+                    <div class="product__details">
+                          
+                          <img src="assets/images/shoes.png" alt="">
+                            <div class="text">
+                             <p>name</p>
+                                <h1>$34</h1>
+                                </div>
+                            </div>
+        
+                        <div class="quantity">
+                            
+                        <input type="number" min="1" max="100" step="1" value="10" id="my-input" readonly>
+                        <div class="steperBtn">
+                        <button id="increment" > <img src="assets/icon/arrow.svg" alt=""> </button>
+                        <button id="decrement" > <img src="assets/icon/arrow-down.svg" alt=""> </button>
+        
+                        </div>
+                        </div>
+                            <a href="#"> <img src="assets/icon/delete.svg" alt=""></a>
+        
+        
+                </div> 
+    
+            </div>
+    
+    
+            <div class="right__side">
+            <div class="to__items">
+                <p>Total Items</p>
+                <span id="totalItem">09</span>
+            </div>
+            <div class="to__cost">
+                <p>Total Cost</p>
+                <span id="totalPrice">$993.00</span>
+            </div>
+    
+            <button>Proceed To Checkout</button>
+            </div>
+        </div> 
+            
+        
+        </div>
+</body>
+<script async src="assets/js/products.js"></script>
+<script async src="assets/js/app.js"></script>
+
+
+</html>
