@@ -8,6 +8,7 @@ function showHomePage(){
     document.querySelector('.container').style.display = "block";
 }
 
+
 //Select Element For Place The Content
 const productEl = document.querySelector('#place__products');
 const cartEl = document.querySelector('#cartProducts');
@@ -49,7 +50,7 @@ let cart = [];
 function  addToCart(id){
     //Condition For Same Product adding in cart array
     if(cart.some((item) => item.id === id)){
-        alert("Vai Same Product Disen!!")
+        alert("Vai Same Product 2 Time  Den Ken??")
     }else{
         const item = products.find((item) => item.id === id);
 
