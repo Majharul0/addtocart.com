@@ -134,7 +134,7 @@ body {
 /* media quary start here */
 @media screen and (max-width: 420px) {
   .container {
-    padding: 1rem 1rem;
+    padding: 2rem;
   }
 }
 @media screen and (max-width: 360px) {

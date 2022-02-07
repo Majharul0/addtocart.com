@@ -223,7 +223,7 @@ span {
 }
 @media screen and (max-width: 420px) {
   .containerForCart {
-    padding: 1rem 1rem;
+    padding: 2rem;
   }
   .containerForCart .total__items .right__side {
     width: 100%;
