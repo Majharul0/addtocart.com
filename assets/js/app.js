@@ -1,12 +1,12 @@
 //For home page or cart page in one page
-function showCartPage(){
-    document.querySelector('.containerForCart').style.display = "block";
-    document.querySelector('.container').style.display = "none";
-}
-function showHomePage(){
-    document.querySelector('.containerForCart').style.display = "none";
-    document.querySelector('.container').style.display = "block";
-}
+// function showCartPage(){
+//     document.querySelector('.containerForCart').style.display = "block";
+//     document.querySelector('.container').style.display = "none";
+// }
+// function showHomePage(){
+//     document.querySelector('.containerForCart').style.display = "none";
+//     document.querySelector('.container').style.display = "block";
+// }
 
 
 //Select Element For Place The Content
@@ -164,4 +164,5 @@ function removeItem(id){
     cart = cart.filter((item) => item.id != id);
     updateToCart();
 }
+
 
