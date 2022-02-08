@@ -44,8 +44,11 @@ var renderproduct = () =>{
 
 renderproduct();
 // Cart Page Functionality start from here
+
 //Cart Array
-let cart = [];
+let cart = JSON.parse(localStorage.getItem("CART")) || [];
+updateToCart()
+
 //Add Product To Cart
 function  addToCart(id){
     //Condition For Same Product adding in cart array
@@ -73,6 +76,8 @@ function updateToCart(){
 
 //update product num or price
     updateNumPrice()
+//set items into localstorage
+    localStorage.setItem("CART",JSON.stringify(cart))
 
 }
 
